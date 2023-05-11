@@ -10,7 +10,7 @@
 	<tr>
 		<td>
 
-```html
+```HTML
 <table>
     <tr>
         <td>Cell 1</td>
