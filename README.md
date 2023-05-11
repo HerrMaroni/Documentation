@@ -204,4 +204,50 @@ In the third row, the first data cell span across three columns using colspan="3
 
 In the fourth row, the first data cell span across two columns using colspan="2", while the next data cell occupys a single column. The last data cell span across two columns using colspan="2" again.
 
+---
 
+To give a better example of how to achieve different cell spacing, let's create a table with 20 columns that all have a spacing of 5% (100% / 20 = 5%). This way we can make finer adjustments.
+
+```html
+<table>
+    <colgroup>
+        <col width="5%"><col width="5%">
+        <col width="5%"><col width="5%">
+        <col width="5%"><col width="5%">
+        <col width="5%"><col width="5%">
+        <col width="5%"><col width="5%">
+        <col width="5%"><col width="5%">
+        <col width="5%"><col width="5%">
+        <col width="5%"><col width="5%">
+        <col width="5%"><col width="5%">
+        <col width="5%"><col width="5%">
+    </colgroup>
+    <tr>
+        <th colspan="4">Cell 1</th>
+        <td colspan="16">Cell 2</td>
+    </tr>
+    <tr>
+        <th colspan="6">Cell 3</th>
+        <td colspan="14">Cell 4</td>
+    </tr>
+    <tr>
+        <th colspan="4">Cell 5</th>
+        <td colspan="6">Cell 6</td>
+        <th colspan="4">Cell 7</th>
+        <td colspan="6">Cell 8</td>
+    </tr>
+    <tr>
+        <th colspan="3">Cell 9</th>
+        <td colspan="17">Cell 10</td>
+    </tr>
+</table>
+```
+
+</td>
+		<td>
+			<picture>
+				<img alt="First example" src="https://raw.githubusercontent.com/HerrMaroni/Documentation/main/E6.png">
+			</picture>
+		</td>
+	</tr>
+</table>
