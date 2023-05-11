@@ -208,6 +208,10 @@ In the fourth row, the first data cell span across two columns using colspan="2"
 
 To give a better example of how to achieve different cell spacing, let's create a table with 20 columns that all have a spacing of 5% (100% / 20 = 5%). This way we can make finer adjustments.
 
+<table>
+	<tr>
+		<td>
+
 ```html
 <table>
     <colgroup>
