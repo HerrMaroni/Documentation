@@ -140,3 +140,68 @@
 		</td>
 	</tr>
 </table>
+
+---
+## Advanced Tables
+
+**What if we want to merge cells in a more precise way?**
+
+For this we can use the `<col>` tag. The `<col>` tag in HTML is used to define attributes for a group of columns within a table. It allows you to apply styling or formatting to multiple columns simultaneously.
+
+<table>
+	<tr>
+		<td>
+
+```html
+<table>
+    <colgroup>
+        <col style="width: 20%;">
+        <col style="width: 20%;">
+        <col style="width: 20%;">
+        <col style="width: 20%;">
+        <col style="width: 20%;">
+    </colgroup>
+    <tr>
+        <th colspan="3">Header 1</th>
+        <th colspan="2">Header 2</th>
+    </tr>
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+        <td>Cell 4</td>
+        <td>Cell 5</td>
+    </tr>
+    <tr>
+        <td colspan="3">Cell 6</td>
+        <td colspan="1">Cell 7</td>
+        <td colspan="1">Cell 8</td>
+    </tr>
+    <tr>
+        <td colspan="2">Cell 9</td>
+        <td colspan="1">Cell 10</td>
+        <td colspan="2">Cell 11</td>
+    </tr>
+</table>
+```
+
+</td>
+		<td>
+			<picture>
+				<img alt="First example" src="https://raw.githubusercontent.com/HerrMaroni/Documentation/main/E5.png">
+			</picture>
+		</td>
+	</tr>
+</table>
+
+In this example, we use the `<colgroup>` element to group the `<col>` elements together. Each <col> element specifies a specific width using the width style attribute. We set the widths to 20%, 20%, 20%, 20%, and 20% respectively (total 100%), representing the five columns of the table.
+
+The first row contains two headers that span two and three columns using the colspan attribute. This ensures that the header cells cover multiple columns.
+
+The second row contains data cells in each column, maintaining the specified widths.
+
+In the third row, the first data cell span across three columns using colspan="3", while the next two data cells occupy a single column each.
+
+In the fourth row, the first data cell span across two columns using colspan="2", while the next data cell occupys a single column. The last data cell span across two columns using colspan="2" again.
+
+
